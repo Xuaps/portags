@@ -3,13 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>por[tags].com</title>
-<link href="site_media/css/estilo.css" rel="stylesheet" type="text/css" />
+<link href="/site_media/css/estilo.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 <div id="page1">
     <div id="wrap">
-        <div id="logo"><img src="site_media/images/portags.gif" alt="portags" width="383" height="74" />
+        <div id="logo"><img src="/site_media/images/portags.gif" alt="portags" width="383" height="74" />
         </div>
         <div id="user">
               
@@ -25,16 +25,13 @@
           </form>
    		</div>
     	<div id="content">
-          <p>CONTENIDOS  DIV ID CONTENT        </p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;  </p>
+          {% if object_list %}
+                {% for object in object_list %}
+                    <a href="/polls/{{ object.id }}/">{{ object.question }}</a>
+                {% endfor %}
+           {% else %}
+                <p>No tags are available.</p>
+           {% endif %}
     	</div>
   </div>
 </div>
