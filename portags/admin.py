@@ -1,6 +1,4 @@
-from polls.models import Poll, Choice
 from django.contrib import admin
+from portags.models import Tag
 
-admin.site.register(Poll)
-admin.site.register(Choice)
-  
+admin.site.register(Tag)

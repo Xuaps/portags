@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>por[tags].com</title>
+<link href="/media/css/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="page1">
+    <div id="wrap">
+        <div id="logo"><img src="/media/img/portags.gif" alt="portags" width="383" height="74" />
+        </div>
+        <div id="user">
+              
+        </div>
+      	<div id="search">
+          <form method="get" action="search/">
+                <label>
+                <input name="tags" type="text" size="110" />
+                </label>&nbsp;&nbsp;
+            	<label>
+                    <button>Buscar</button>
+                </label>
+          </form>
+   		</div>
+    	<div id="content">
+          {% if object_list %}
+                {% for object in object_list %}
+                    <a href="/search/?tags={{ object.nombre }}"><span style="font-size:{{ object.numero_busquedas }}em">{{ object.nombre }}</span></a>
+                {% endfor %}
+           {% else %}
+                <p>No tags are available.</p>
+           {% endif %}
+    	</div>
+  </div>
+</div>
+</body>
+</html>
