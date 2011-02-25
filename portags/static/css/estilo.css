@@ -15,7 +15,7 @@ body {
 	height:100%;
 }
 #page1{
-background-image: url(../images/fondo-gris-negro.jpg);
+background-image: url(../img/fondo-gris-negro.jpg);
 	background-repeat: repeat-x;
 	width:100%;
 	height:auto;
@@ -78,7 +78,7 @@ position:relative;
 }
 #page2{
 width:100%;
-background: #ffffff url(../images/header_interior.jpg);
+background: #ffffff url(../img/header_interior.jpg);
 background-repeat:repeat-x;
 margin:auto;
 
