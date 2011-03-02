@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69a2a8f7-d068-4a24-846a-c18d3b658fae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portags/static/img/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portags/static/img/fondo-gris-negro.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portags/static/img/header_interior.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portags/static/img/portags.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portags/static/img/portags_blanco.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portags/static/css/estilo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/portags/tag_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/portags/tag_result.html" />
-      <change type="DELETED" beforePath="D:\desarrollo_limpio\mis_proyectos\Portags\templates\polls\poll_detail.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\desarrollo_limpio\mis_proyectos\Portags\templates\polls\poll_list.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\desarrollo_limpio\mis_proyectos\Portags\templates\polls\results.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demodb" afterPath="$PROJECT_DIR$/demodb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portags/admin.py" afterPath="$PROJECT_DIR$/portags/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portags/models.py" afterPath="$PROJECT_DIR$/portags/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portags/urls.py" afterPath="$PROJECT_DIR$/portags/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portags/views.py" afterPath="$PROJECT_DIR$/portags/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portags/static/css/estilo.css" afterPath="$PROJECT_DIR$/portags/static/css/estilo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/portags/tag_result.html" afterPath="$PROJECT_DIR$/templates/portags/tag_result.html" />
     </list>
     <ignored path="python_spike.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/portags/models.py">
+      <file leaf-file-name="tag_result.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/portags/tag_result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="23" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+            <state line="34" column="38" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.7741348">
               <folding />
             </state>
           </provider>
@@ -62,73 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tag_result.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/portags/tag_result.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="56" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/portags/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/portags/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="88" selection-end="138" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="385" selection-end="542" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tag_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/portags/tag_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="30" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-18.961538">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="estilo.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portags/static/css/estilo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="30" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/portags/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="24" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="30" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.40869564">
+            <state line="93" column="16" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,11 +80,11 @@
         <option value="$PROJECT_DIR$/portags/models.py" />
         <option value="$PROJECT_DIR$/portags/views.py" />
         <option value="$USER_HOME$/Desktop/urls.py" />
-        <option value="$PROJECT_DIR$/portags/static/css/estilo.css" />
-        <option value="$PROJECT_DIR$/templates/portags/tag_result.html" />
         <option value="$PROJECT_DIR$/templates/portags/tag_list.html" />
         <option value="$PROJECT_DIR$/urls.py" />
         <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/portags/static/css/estilo.css" />
+        <option value="$PROJECT_DIR$/templates/portags/tag_result.html" />
       </list>
     </option>
   </component>
@@ -193,7 +114,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,28 +221,28 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="113" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="131" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="284" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="302" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="128" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="299" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="133" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="305" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="807" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="802" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="128" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="126" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="978" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="973" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="300" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="297" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
@@ -473,20 +394,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494577" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26765016" sideWeight="0.6681465" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2665964" sideWeight="0.6681465" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3318535" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -549,26 +470,24 @@
         <state line="8" column="23" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portags/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="73" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/portags/tag_result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="56" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portags/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portags/static/css/estilo.css">
+    <entry file="file://$PROJECT_DIR$/portags/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="30" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" />
+        <state line="4" column="0" selection-start="88" selection-end="138" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="385" selection-end="542" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/portags/tag_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="30" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portags/admin.py">
@@ -576,30 +495,28 @@
         <state line="3" column="24" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/portags/tag_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="30" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-18.961538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portags/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="88" selection-end="138" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="385" selection-end="542" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="30" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.40869564">
+        <state line="90" column="50" selection-start="3200" selection-end="3200" vertical-scroll-proportion="1.1906413">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portags/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="73" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portags/static/css/estilo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="16" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/portags/tag_result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="38" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.7741348">
           <folding />
         </state>
       </provider>

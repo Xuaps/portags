@@ -1,22 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>por[tags].com</title>
-<link href="/media/css/estilo.css" rel="stylesheet" type="text/css" />
-</head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>por[tags].com</title>
+        <script src="https://www.google.com/jsapi?key=ABQIAAAAk02Kc9vGe1wxFyjds1Nh1RQYJa0EiTLQlqYeTYEvvywIptAeYRRp6jA1ge-tDvLVdIvuhwbw7RVXZQ" type="text/javascript"></script>
+        <script language="Javascript" type="text/javascript">
+            //<![CDATA[
 
-<body>
-<div id="page2">
-        <div id="wrap">
-   			<div id="logo_interior"><img src="/media/img/portags_blanco.gif" /></div>
-            	<div id="user_interior">
-					
-          		</div>
-          <div id="contenido_interior">
-            <iframe src="http://www.google.com/search?q={{ tag }}" width="100%" height="100%" />
-          </div>
+            google.load("search", "1");
+
+            function OnLoad() {
+                // Create a search control
+                var searchControl = new google.search.SearchControl();
+
+                // Add in a full set of searchers
+                searchControl.addSearcher(new google.search.WebSearch());
+
+                // Tell the searcher to draw itself and tell it where to attach
+                searchControl.draw(document.getElementById("searchcontrol"));
+
+                // Execute an inital search
+                searchControl.execute("{{ tag }}");
+                }
+                google.setOnLoadCallback(OnLoad);
+
+                //]]>
+        </script>
+        <link href="/media/css/estilo.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+    <div id="page2">
+        <div id="logo_interior"><img src="/media/img/portags_blanco.gif" /></div>
+        <div id="searchcontrol"></div>
     </div>
-</div>
-</body>
+    </body>
 </html>
