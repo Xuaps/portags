@@ -12,7 +12,7 @@
         <div id="logo"><img src="/media/img/portags.gif" alt="portags" width="383" height="74" />
         </div>
         <div id="user">
-              
+
         </div>
       	<div id="search">
           <form method="get" action="search/">
@@ -25,9 +25,9 @@
           </form>
    		</div>
     	<div id="content">
-          {% if object_list %}
-                {% for object in object_list %}
-                    <a href="/search/?tags={{ object.nombre }}"><span style="font-size:{{ object.numero_busquedas }}em">{{ object.nombre }}</span></a>
+          {% if tags %}
+                {% for object in tags %}
+                    <a href="/search/?tags={{ object.nombre }}"><span style="font-size:{{ object.size }}">{{ object.nombre }}</span></a>
                 {% endfor %}
            {% else %}
                 <p>No tags are available.</p>

@@ -1,17 +1,19 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
-from portags.models import Tag
+from portags.models import Tag, TagsFactory, HtmlFontSizer
+
+def list(request):
+    sizer=HtmlFontSizer(50)
+    tags=Tag.objects.all()
+    for tag in tags:
+        sizer.setSizeTo(tag,tag.numero_busquedas)
+
+    return render_to_response("portags/tag_list.html",{"tags" : tags})
 
 def search(request):
-    #recoger los tags y procesarlos
-    tags=request.GET['tags']
-    lista_tag=tags.split()
-    try:
-        tag=Tag.objects.get(nombre=lista_tag[0])
-        tag.numero_busquedas+=1
-    except Tag.DoesNotExist:
-        tag=Tag(nombre=lista_tag[0],numero_busquedas=1)
+    print request.GET['tags']
+    for tag in TagsFactory().BuildTagsFromString(request.GET['tags']):
+        tag.IncrementarNumeroBusquedas()
+        tag.save()
 
-    tag.save()
-    #renderizar la bsuqueda de google
-    return render_to_response("portags/tag_result.html",{'tag':tag.nombre})
+    return render_to_response("portags/tag_result.html",{'tag':request.GET['tags'], 'tags':tag.tags_relacionados})

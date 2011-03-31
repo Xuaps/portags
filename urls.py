@@ -5,15 +5,9 @@ import settings
 
 admin.autodiscover()
 
-info_dict = {
-    'queryset': Tag.objects.all(),
-}
-
 urlpatterns = patterns('',
-    (r'^$', 'django.views.generic.list_detail.object_list', info_dict),
-    (r'^search/$', 'portags.views.search'),
-    (r'^admin/', include(admin.site.urls)),
-)
+    (r'^', include('portags.urls'))
+    )
 
 if settings.DEBUG:
     urlpatterns += patterns('',
