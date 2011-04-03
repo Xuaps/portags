@@ -45,7 +45,7 @@ class TagsFactory(object):
         tag.save()
     return tags
 
-class HtmlFontSizer():
+class HtmlFontSizer(object):
     html_size=['xx-small','x-small','small','medium','large','x-large','xx-large']
 
     def __init__(self,realMaxSize):
@@ -57,3 +57,7 @@ class HtmlFontSizer():
     def calculateProporcionalValue(self,tamanho):
         totalSizes=len(self.html_size)
         return min(int((tamanho*totalSizes)/self.max),totalSizes-1)
+
+class SearchManager(object):
+    def processSearch(self,tags):
+        pass

@@ -1,6 +1,5 @@
 from django.conf.urls.defaults import *
 from django.contrib import admin
-from portags.models import Tag
 import settings
 
 admin.autodiscover()

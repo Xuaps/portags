@@ -1,5 +1,7 @@
+from models import Tag, SearchManager
 import models
 import unittest
+import views
 
 class TagTestCase(unittest.TestCase):
     def test_puedo_crear_un_tag(self):
@@ -28,7 +30,7 @@ class TagsFactoryTestCase(unittest.TestCase):
         self.failUnlessEqual(self.tags[0].tags_relacionados.all()[0], self.tags[1])
         self.failUnlessEqual(self.tags[1].tags_relacionados.all()[0], self.tags[0])
 
-    def test_dada_una_busqueda_con_dos_tags_separados_por_espacio_puedo_obtener_dos_tags_relacionados_de_la_bd(self):
+    def test_cuando_construyo_tags_puedo_persistirlos(self):
         tags=models.Tag.objects.all()
         self.failUnlessEqual(tags[0].tags_relacionados.all()[0], self.tags[1])
         self.failUnlessEqual(tags[1].tags_relacionados.all()[0], self.tags[0])
@@ -95,3 +97,12 @@ class HtmlFontSizerTestCase(unittest.TestCase):
         self.sizer.setSizeTo(self.tag,50)
 
         self.assertEqual('xx-large',self.tag.size)
+
+class SearchManagerTestCase(unittest.TestCase):
+    def test_puedo_incrementar_el_numero_de_busquedas_de_un_tag_implicito_en_una_busqueda(self):
+        search_manager=SearchManager()
+        tags=[Tag(nombre="juas",numero_busquedas=0)]
+        
+        search_manager.processSearch(tags)
+
+        self.assertEquals(1,tags[0].numero_busquedas)

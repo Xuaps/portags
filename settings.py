@@ -75,9 +75,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'Portags.urls'
+ROOT_URLCONF = 'src.urls'
 
-TEMPLATE_DIRS = ('d:/desarrollo_limpio/mis_proyectos/Portags/templates'
+TEMPLATE_DIRS = ('d:/desarrollo_limpio/mis_proyectos/Portags/src/templates'
 )
 
 INSTALLED_APPS = (
