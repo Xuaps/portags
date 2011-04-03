@@ -46,7 +46,6 @@ class TagsFactoryTestCase(unittest.TestCase):
         self.assertEqual("juas",self.tags[0].nombre)
         self.assertEqual(self.tags[0].numero_busquedas,0)
 
-
     def test_dada_una_busqueda_con_un_tag_existente_lo_recupera(self):
         tag=models.Tag.objects.get(nombre="juas")
 
@@ -99,10 +98,9 @@ class HtmlFontSizerTestCase(unittest.TestCase):
         self.assertEqual('xx-large',self.tag.size)
 
 class SearchManagerTestCase(unittest.TestCase):
-    def test_puedo_incrementar_el_numero_de_busquedas_de_un_tag_implicito_en_una_busqueda(self):
-        search_manager=SearchManager()
+    def test_puedo_incrementar_el_numero_de_busquedas_de_un_tag_cuando_proceso_la_busqueda(self):
         tags=[Tag(nombre="juas",numero_busquedas=0)]
         
-        search_manager.processSearch(tags)
+        SearchManager(tags).processSearch()
 
         self.assertEquals(1,tags[0].numero_busquedas)

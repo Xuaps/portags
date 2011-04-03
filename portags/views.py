@@ -1,5 +1,5 @@
 from django.shortcuts import render_to_response
-from portags.models import Tag, TagsFactory, HtmlFontSizer
+from portags.models import Tag, TagsFactory, HtmlFontSizer, SearchManager
 
 def list(request):
     sizer=HtmlFontSizer(50)
@@ -14,13 +14,8 @@ def setFotSizeTo(sizer, tags):
 
 def search(request):
     search = request.GET['tags']
-    relacionados=None
-    for tag in TagsFactory().BuildTagsFromString(search):
-        if(relacionados==None):
-            relacionados=set(tag.tags_relacionados.all())
-        else:
-            relacionados=relacionados.intersection(tag.tags_relacionados.all())
-        tag.IncrementarNumeroBusquedas()
-        tag.save()
-
-    return render_to_response("portags/tag_result.html",{'search':search, 'relacionados':relacionados})
+    searchManager=SearchManager(TagsFactory().BuildTagsFromString(search))
+    
+    searchManager.processSearch()
+#'relacionados':relacionados
+    return render_to_response("portags/tag_result.html",{'search':search})

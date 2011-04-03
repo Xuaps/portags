@@ -59,5 +59,16 @@ class HtmlFontSizer(object):
         return min(int((tamanho*totalSizes)/self.max),totalSizes-1)
 
 class SearchManager(object):
-    def processSearch(self,tags):
-        pass
+    tags=None
+    def __init__(self,tags):
+        self.tags=tags
+        
+    def processSearch(self):
+        for tag in self.tags:
+            tag.IncrementarNumeroBusquedas()
+            
+#            tag.save()
+#if(relacionados==None):
+#                relacionados=set(tag.tags_relacionados.all())
+#            else:
+#                relacionados=relacionados.intersection(tag.tags_relacionados.all())
