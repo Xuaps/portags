@@ -17,5 +17,5 @@ def search(request):
     searchManager=SearchManager(TagsFactory().BuildTagsFromString(search))
     
     searchManager.processSearch()
-#'relacionados':relacionados
-    return render_to_response("portags/tag_result.html",{'search':search})
+
+    return render_to_response("portags/tag_result.html",{'search':search, 'relacionados':searchManager.related_searches})

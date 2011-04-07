@@ -1,7 +1,6 @@
 from models import Tag, SearchManager
 import models
 import unittest
-import views
 
 class TagTestCase(unittest.TestCase):
     def test_puedo_crear_un_tag(self):
@@ -97,10 +96,45 @@ class HtmlFontSizerTestCase(unittest.TestCase):
 
         self.assertEqual('xx-large',self.tag.size)
 
-class SearchManagerTestCase(unittest.TestCase):
+class TagsManagerTestCase(unittest.TestCase):
+    def setUp(self):
+        self.tag1=self.createTag('tag1')
+        self.tag2=self.createTag('tag2')
+        self.tag3=self.createTag('tag3')
+        self.tag4=self.createTag('tag4')
+        self.relateFirstTagWithFollowings([self.tag1,self.tag2,self.tag3])
+        self.relateFirstTagWithFollowings([self.tag2,self.tag3,self.tag4])
+        
     def test_puedo_incrementar_el_numero_de_busquedas_de_un_tag_cuando_proceso_la_busqueda(self):
-        tags=[Tag(nombre="juas",numero_busquedas=0)]
+        tags=[self.createTag('tag1')]
         
         SearchManager(tags).processSearch()
 
         self.assertEquals(1,tags[0].numero_busquedas)
+    
+    def test_puedo_obtener_los_busquedas_relacionadas_con_una_busqueda_de_un_solo_tag(self):
+        tagsManager=SearchManager([self.tag1])
+        tagsManager.processSearch()
+        
+        relacionados=tagsManager.related_searches;
+        
+        self.assertEquals('tag2',relacionados.pop().nombre)
+    
+    def test_puedo_obtener_los_busquedas_relacionadas_con_una_busqueda_de_un_varios_tags(self):
+        tagsManager=SearchManager([self.tag1,self.tag2])
+        tagsManager.processSearch()
+        
+        relacionados=tagsManager.related_searches;
+        
+        self.assertEquals('tag3',relacionados.pop().nombre)
+        
+    def createTag(self, nombre):
+        tag = Tag(nombre=nombre)
+        tag.save()
+        return tag
+    
+    def relateFirstTagWithFollowings(self,tags):
+        tag=tags[0]
+        for i in range(1,len(tags)):
+            tag.tags_relacionados.add(tags[i])
+        tag.save()

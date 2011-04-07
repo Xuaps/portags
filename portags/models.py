@@ -60,15 +60,19 @@ class HtmlFontSizer(object):
 
 class SearchManager(object):
     tags=None
+    related_searches=None
     def __init__(self,tags):
         self.tags=tags
         
     def processSearch(self):
         for tag in self.tags:
             tag.IncrementarNumeroBusquedas()
-            
-#            tag.save()
-#if(relacionados==None):
-#                relacionados=set(tag.tags_relacionados.all())
-#            else:
-#                relacionados=relacionados.intersection(tag.tags_relacionados.all())
+            tag.save()
+            self.buildRelations(tag)
+    
+    def buildRelations(self,tag):
+        if(self.related_searches==None):
+                self.related_searches=set(tag.tags_relacionados.all())
+        else:
+                self.related_searches=self.related_searches.intersection(tag.tags_relacionados.all())
+

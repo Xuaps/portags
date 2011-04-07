@@ -87,6 +87,10 @@ margin:auto;
     height:80px;
 }
 
+#tags_relacionados{
+	font-size:medium;
+}
+
 .gsc-control{
     font-size:medium;
     width:100%;
